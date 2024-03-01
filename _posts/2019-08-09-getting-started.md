@@ -1,16 +1,14 @@
 ---
-title: Getting Started
-author: cotes
-date: 2019-08-09 20:55:00 +0800
-categories: [Blogging, Tutorial]
+title: Our paper got accepted to the Findings of EMNLP 2023!
+author: Jiwoo
+date: 2023-12-06 21:00:00 +0800
+categories: [EMNLP2023]
 tags: [getting started]
 pin: true
 img_path: '/posts/20180809'
 ---
 
-## Prerequisites
-
-Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of the basic environment. [Git](https://git-scm.com/) also needs to be installed.
+Our paper, [Disentangling Structure and Style: Political Bias Detection in News by Inducing Document Hierarchy](https://aclanthology.org/2023.findings-emnlp.377/) is accepted to the *Findings of EMNLP 2023*!
 
 ## Installation
 
