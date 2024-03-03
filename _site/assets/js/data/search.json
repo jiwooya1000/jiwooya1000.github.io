@@ -1,108 +1,48 @@
 [
   
   {
-    "title": "Smart Contract Reader for Ethereum blockchain",
-    "url": "/posts/smart-contract-reader/",
-    "categories": "Web Development, Smart Contract Reader",
-    "tags": "🔥React, 🔥Solidity",
-    "date": "2023-08-11 00:00:00 -0400",
-    
-
-
-
-
-
-    "snippet": "App demohttps://erc.adriannyc.devERC20 Faucet React Project with Thirdweb FrameworkThis repository contains the source code for a project written with React and Thirdweb framework.The project is hosted on GitHub Pages under my private domain.Link to Project source code OverviewThe project is built with React, a popular JavaScript library for building user interfaces.It utilizes the Thirdweb framework to interact with smart contracts, enabling seamless integration with blockchain functionalities. RequirementsTo interact with this project, you’ll need to have a MetaMask wallet installed on your browser.MetaMask is a popular Ethereum wallet extension that allows you to manage your Ethereum accounts and interact with blockchain applications. Important NotesThis project’s ERC20 contract lives on the Ethereum Testnet blockchain Mumbai.While the contract is considered safe for use, I recommend being cautious and not interacting with other contracts until all potential bugs are corrected. Features      Uses hooks and custom CSS to render a modern and user-friendly UI.    Uses hooks and custom CSS to render a modern and user-friendly UI.  Utilizes Thirdweb framework to interact with smart contracts on the Ethereum Test blockchain.  Custom-written ERC20 contract implementation for token functionality.  Enable interaction with my ERC-20 implementation, though other token contracts may also be used.  Developed with React, leveraging React hooks and custom CSS for user-friendly UI rendering. Installation and DeploymentTo use this repository, follow the steps below:Clone the repository and navigate to the project directory:git clone https://github.com/adrianmnh/erc20-faucet/tree/mainBranchcd erc20-faucetInstall the required dependencies:npm installRun the project locally:npm run startFor production deployment:npm run buildnpm run deploy -- -m \"Custom commit message for gh-pages repo\"Notes: The gh-pages module has an index.js file that contains a list of exports. In this file, you’ll find branch and remote keys. Make sure to configure the remote value to match the name of the remote repository where your source code resides (e.g., “origin” or a custom name).Thank you for checking out this project! If you have any questions or issues, feel free to reach out."
-  },
-  
-  {
-    "title": "FastCart - Food Delivery App for iOS",
-    "url": "/posts/FastCart-v1/",
-    "categories": "Mobile App Development, Swift UIStoryboard, Databases, Facebook Authentication",
-    "tags": "🔥Swift Programming Language, iOS Development, django framework, stripe, Xcode, PostgreSQL",
-    "date": "2022-12-29 00:00:00 -0500",
-    
-
-
-
-
-
-    "snippet": "objectiveThe aim of our application is to provide local businesses with an online presence, enabling them to reach out to their customers during the mid-stages of the pandemic. This was achieved by creating FastCart, a food delivery app with a web management system built on several technologies and frameworks.source code and readme: Project Repohow to useTo use FastCart, restaurant owners register on the website by creating a login and verifying their account. They then input information regarding their restaurant, including menus, beverages, combination platters, and pricing. The option to upload an image for each menu item is also provided.Customers can easily create an account using Facebook authentication and begin browsing restaurants within their proximity. Once a restaurant is selected, customers can add items to their cart, change quantities, and proceed to payment. Orders created are submitted and given a pending status.On the restaurant side, once an order is received, the restaurant manager approves the order, changing its status to in progress or canceled. When the order is ready for delivery, the status is changed to ready, at which point a driver can pick up the order and deliver it to the customer. Once the order is delivered, the status is changed to completed.backgroundFastCart was developed using Xcode to create an iOS user interface in the Swift programming language, and Django, a Python framework, to create the backend server for the website and API. The object-oriented relational database PostgreSQL was used to store data, while Heroku, a Platform-as-a-Service, was utilized to host the website. In addition, AWS S3 was used to store assets uploaded by business owners, Facebook API was used for user authentication, and Stripe was used for payment processing.It is important to note that the user interface of the iOS application is different for customers and drivers, while the website is exclusively for restaurant owners.credits to:  Orlando Vargas  Fernando Gonzales"
-  },
-  
-  {
-    "title": "Compression and Decompression via Distance Transform",
-    "url": "/posts/DistanceTransformCompression/",
-    "categories": "Image Processing, Skeleton Compression Algorithm",
-    "tags": "🔥C++ Programming Language, Binary Image",
-    "date": "2022-11-02 00:00:00 -0400",
-    
-
-
-
-
-
-    "snippet": "ObjectiveGiven a binary image, the objective is to produce a loss-less compression via the skeleton of 8-connectness distance transform.To ensure correctness, a decompression algorithm is used on the compressed file. Project PDF source code and algorithmsusage  Create a new folder  Download main.cpp and binary images in text format  Run the following commandsg++ main.cpp -o main.exe./main.exe img1./main.exe img2 Link to Project repo "
-  },
-  
-  {
-    "title": "Threshold Selection",
-    "url": "/posts/ThresholdSelection/",
-    "categories": "Image Processing, Thresholding Algorithm",
-    "tags": "🔥C++ Programming Language, Histogram",
-    "date": "2022-10-02 00:00:00 -0400",
-    
-
-
-
-
-
-    "snippet": "ObjectiveTo take an image’s histogram from a text file and find the best threshold using the Gaussian automatic threshold selection method.This process yields a Gaussian function which is graphed along with the histogram, and the best threshold on the output files Project PDF source code and algorithmsusage  Create a new folder  Download main.cpp and data files  Run the following commandsg++ main.cpp -o main.exe./main.exe image_histogram1.txt outFile1_1.txt outFile1_2.txt./main.exe image_histogram2.txt outFile2_1.txt outFile2_2.txt Link to Project repo "
-  },
-  
-  {
-    "title": "eMovies Model Transformation",
+    "title": "Arxiv - Reference-free Monolitic Odds Ratio Preference Optimization (ORPO)",
     "url": "/posts/eMoviesRework/",
-    "categories": "Data Analytics, Data Modeling a Movie Streaming",
-    "tags": "Data Modeling, erwin Data Modeler, Physical Data Model, Conceptual Data Model, Logical Data Model, SQL Server, Quest Software",
-    "date": "2022-09-25 15:02:00 -0400",
+    "categories": "NLP, Language Model Alignment",
+    "tags": "🔥Publications, NLP, LLM, Alignment",
+    "date": "2024-03-03 00:00:00 -0500",
     
 
 
 
 
 
-    "snippet": "backgroundeMovies is a data model provided by Quest’s ERwinDM sample with Logical and Physical models that describe an outdated Movie rental service.The purpose of this project is to rework the models into a modern format More on Quest’s eMovies and data models Features of my Models  Includes a Conceptual Model  Includes a Logical Model  Includes a Physical Model  Includes views to facilitate database usage  Multi-dimensional model layers to caputure how the business works by precisely representing business rules  Model represents Navigation by capturing how the business is monitored  Multiple bridge tables allow multi-value attributes  PDM Tables are Normalized to 3rd normal form (3NF)  User defined domains for all attributes  Default values for non null attributes  Constraints for attributes  Different methods of payments, multi payment featuremodel demo Link to Project repoConceptual Data Model without Payment entitiesLogical Data Model with multi-payment methodsPhysical Data Model with Attributes and Columns"
+    "snippet": "Our paper, ORPO: Monolithic Odds Ratio Preference Optimization without Reference Model is uploaded to Arxiv.org! Our best model, ORPO-Mistral (7B) and ORPO-Llama-2 (7B) surpasses the state-of-the-art instruction-following large language models, including Zephyr ($\\alpha$), Zephyr ($\\beta$), and Llama-2-Chat (13B) in AlpacaEval and MT-Bench. AbstractWhile recently proposed preference alignment algorithms for language models have demonstrated promising results, supervised fine-tuning (SFT) remains imperative for achieving successful convergence in preference alignment. In this paper, we elaborate on the crucial role of SFT within the context of preference alignment, emphasizing that a minor penalty for the disfavored generation style is sufficient for preference-aligned SFT. Building on this foundation, we introduce a straightforward and innovative reference-free monolithic odds ratio preference optimization algorithm, ORPO, eliminating the necessity for an additional preference alignment phase. Empirically and theoretically, we demonstrate that the odds ratio serves as a sensible choice for contrasting favored and unfavored styles during SFT. Specifically, fine-tuning Phi-2 (2.7B), Llama-2 (7B), and Mistral (7B) with ORPO on UltraFeedback alone surpasses the performance of state-of-the-art language models with more than 7B and 13B parameters, achieving 66.2%, 81.3%, and 87.94% in AlpacaEval. Keywords  Multi-Agent Reinforcement Learning  Sparse Reward  Reward Shaping"
   },
   
   {
-    "title": "CUNYfirst Automated Course Registration(for Windows)",
-    "url": "/posts/AutomatedCourseRegistrating/",
-    "categories": "Web Scraping, Windows Command Line Application",
-    "tags": "🔥Python Programming Language, Selenium, Windows cmd, PowerShell",
-    "date": "2022-01-25 00:00:00 -0500",
+    "title": "EMNLP 2023 - Our paper is accepted to the Findings of EMNLP!",
+    "url": "/posts/emnlp2023/",
+    "categories": "NLP, Journalism AI, EMNLP2023",
+    "tags": "🔥Publications, NLP, Journalism AI, EMNLP2023",
+    "date": "2023-12-06 00:00:00 -0500",
     
 
 
 
 
 
-    "snippet": "depracated after Fall 2022 : CUNYfirst 9.2 Upgradeusage  download the contents of this project repo  create a virtualenv to prevent clashes with user environment  on the command-line:   pip3 install -r requirements.txt  once all dependencies have been installed:  python _src\\driver.py   Follow the prompts on screen*This project does not store any user data outside of local environmentsource code move to project RepobackgroundDuring the fall of 2021, many students at Queens College complained about issues encountered in CUNYFirst during course registration, particularly for high-level courses required to graduate with a bachelor’s degree.As a computer science major, I found myself in the same predicament, unable to register for the high-level CS electives I really wanted and being forced to settle with the less desirable ones. The CS department was unable to offer over-tallies, so I resorted to other tools such as the Coursicle app, which sends notifications for courses being tracked (up to one with the free subscription) and pings every single user tracking the course that the classroom has at least one “open” seat vacancy.At this point, I assume a number upward of 10 users would rush to their browsers and open their saved CUNYFirst bookmarks with the desired courses and try to send requests to the CUNY servers to register for the course(s) selected.From the moment the notification is sent and received, the amount of time needed to proceed with the process of adding or swapping courses takes at least a minute, depending on the Coursicle app’s way of handling these events.I received so many of these “pings”, dropped everything I was doing to re-register, and found myself disappointed every single time. The rollercoaster of emotions was extremely frustrating, but I found a way to channel them and got inspired to build this project."
+    "snippet": "Our paper, Disentangling Structure and Style: Political Bias Detection in News by Inducing Document Hierarchy is accepted to the Findings of EMNLP 2023! AbstractWe address an important gap in detecting political bias in news articles. Previous works that perform document classification can be influenced by the writing style of each news outlet, leading to overfitting and limited generalizability. Our approach overcomes this limitation by considering both the sentence-level semantics and the document-level rhetorical structure, resulting in a more robust and style-agnostic approach to detecting political bias in news articles. We introduce a novel multi-head hierarchical attention model that effectively encodes the structure of long documents through a diverse ensemble of attention heads. While journalism follows a formalized rhetorical structure, the writing style may vary by news outlet. We demonstrate that our method overcomes this domain dependency and outperforms previous approaches for robustness and accuracy. Further analysis and human evaluation demonstrate the ability of our model to capture common discourse structures in journalism. Main MethodThe proposed architecture primarily utilizes the frozen SBERT (Reimers and Gurevych, 2019) to encode the news article by sentences. Then, it calculates semantic relationships between the sentences through BiLSTM and shallow multi-head attention module, which allows us to understand the hierarchical discourse structure of the document. With this explainable property, our model precisely classify the political bias of the given news article in the low resource setting.  Split the bill x-ways  Tip percentages may be adjusted  Settings are stored after app restarts and/or is closed  Settings can be reset back to defaults  Features dark/light mode on settings screen"
   },
   
   {
-    "title": "Tip Calculator for iOS",
-    "url": "/posts/TipCalculator/",
-    "categories": "App Development, iOS Storyboard UI",
-    "tags": "🔥Swift Programming Language, iOS Development, Xcode",
-    "date": "2021-09-30 00:00:00 -0400",
+    "title": "Applied Science - Our paper is accepted to the Applied Science (SCIE)!",
+    "url": "/posts/applied-science/",
+    "categories": "Reinforcement Learning, Multi-Agent Reinforcement Learning",
+    "tags": "🔥Publications, Reinforcement Learning, Multi-Agent Reinforcement Learning",
+    "date": "2022-05-07 00:00:00 -0400",
     
 
 
 
 
 
-    "snippet": "Tip Calculator is an iOS app created to help estimate the gratuity for waitstaff when dining out.How to Install:TipCalculator is not in the Apple AppStore. To use it, you’ll need Xcode installed in mac desktop or laptop, and the iOS device you want to use it on.  Clone the contents of this github repo on to a blank folder  Open Xcode, navigate to the location of the project folder, and open the workspace file  Connect your iOS device via cable to mac, Xcode will recognize the iOS device  Select the iOS Device from the top-center drop-down list  Press runUsageUser can enter a bill amount, choose a tip percentage, and see the tip and total values.User can select between tip percentages by tapping different values on the segmented control and the tip value is updated accordinglyFeatures  Split the bill x-ways  Tip percentages may be adjusted  Settings are stored after app restarts and/or is closed  Settings can be reset back to defaults  Features dark/light mode on settings screenLink to Project source codeCopyright [2021] [Adrian Noa]Licensed under the Apache License, Version 2.0 (the \"License\");you may not use this file except in compliance with the License.You may obtain a copy of the License at    http://www.apache.org/licenses/LICENSE-2.0Unless required by applicable law or agreed to in writing, softwaredistributed under the License is distributed on an \"AS IS\" BASIS,WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.See the License for the specific language governing permissions andlimitations under the License."
+    "snippet": "Our paper, MARL-Based Dual Reward Model on Segmented Actions for Multiple Mobile Robots in Automated Warehouse Environment is accepted to the Applied Science! AbstractThe simple and labor-intensive tasks of workers on the job site are rapidly becoming digital. In the work environment of logistics warehouses and manufacturing plants, moving goods to a designated place is a typical labor-intensive task for workers. These tasks are rapidly undergoing digital transformation by leveraging mobile robots in automated warehouses. In this paper, we studied and tested realistically necessary conditions to operate mobile robots in an automated warehouse. In particular, considering conditions for operating multiple mobile robots in an automated warehouse, we added more complex actions and various routes and proposed a method for improving sparse reward problems when learning paths in a warehouse with reinforcement learning. Multi-Agent Reinforcement Learning (MARL) experiments were conducted with multiple mobile robots in an automated warehouse simulation environment, and it was confirmed that the proposed reward model method makes learning start earlier even there is a sparse reward problem and learning progress was maintained stably. We expect this study to help us understand the actual operation of mobile robots in an automated warehouse further. Keywords  Multi-Agent Reinforcement Learning  Sparse Reward  Reward Shaping"
   }
   
 ]

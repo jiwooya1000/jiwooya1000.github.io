@@ -1,9 +1,9 @@
 ---
-title: eMovies Model Transformation
-author: adrian
-date: 2022-9-25 15:02:00 -400
-categories: [Data Analytics, Data Modeling a Movie Streaming ]
-tags: [Data Modeling , erwin Data Modeler, Physical Data Model, Conceptual Data Model , Logical Data Model, SQL Server, Quest Software]
+title: Arxiv - Reference-free Monolitic Odds Ratio Preference Optimization (ORPO)
+author: jiwoo
+date: 2024-03-03
+categories: [NLP, Language Model Alignment]
+tags: [🔥Publications, NLP, LLM, Alignment]
 pin: true
 math: true
 mermaid: true
@@ -14,52 +14,22 @@ mermaid: true
 #   alt: 
 ---
 
-**`background`**
-
-eMovies is a data model provided by Quest's ERwinDM sample with Logical and Physical models that describe an outdated Movie rental service.
-
-The purpose of this project is to rework the models into a modern format
-
-<a href='https://github.com/adrianmnh/dm-vm' style='font-size:1em; font-weight:bold'> More on Quest's eMovies and data models </a>
-
-**`Features of my Models`**
-
-- [X] Includes a Conceptual Model
-- [X] Includes a Logical Model
-- [X] Includes a Physical Model
-- [ ] Includes views to facilitate database usage
-- [X] Multi-dimensional model layers to caputure how the business works by precisely representing business rules
-- [ ] Model represents Navigation by capturing how the business is monitored
-- [X] Multiple bridge tables allow multi-value attributes
-- [X] PDM Tables are Normalized to 3rd normal form (3NF)
-- [X] User defined domains for all attributes
-- [X] Default values for non null attributes
-- [X] Constraints for attributes
-- [X] Different methods of payments, multi payment feature
-  
-**`model demo`**
-
-<a href="https://github.com/adrianmnh/dm-vm/tree/mainBranch/project1" class="large-link"> Link to Project repo</a>
+Our paper, **<a class="link" style="color: var(--hyperlink-color)" href="https://openreview.net/forum?id=XNzfEFbEJB3">ORPO: Monolithic Odds Ratio Preference Optimization without Reference Model</a>** is uploaded to *Arxiv.org*! Our best model, **ORPO-Mistral (7B)** and **ORPO-Llama-2 (7B)** surpasses the state-of-the-art instruction-following large language models, including Zephyr ($\alpha$), Zephyr ($\beta$), and Llama-2-Chat (13B) in <a class="link" style="color: var(--hyperlink-color)" href="https://github.com/tatsu-lab/alpaca_eval">AlpacaEval</a> and <a class="link" style="color: var(--hyperlink-color)" href="https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge">MT-Bench</a>.
 
 
-<p class="video" >
-<iframe 
-class="embeddedObject shadow resizable" 
-name="embedded_content" 
-scrolling="no" frameborder="4" type="text/html" 
-        style="overflow:hidden;" src="https://www.screencast.com/users/LawlietAdrianLaw/folders/Default/media/8bb7cc47-7ccf-413a-b41e-a865b01daec2/embed" 
- 
-webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</p>
+<img src="/assets/img/posts/orpo_blog.png">
+
+&nbsp;
+
+**`Abstract`**
+
+While recently proposed preference alignment algorithms for language models have demonstrated promising results, supervised fine-tuning (SFT) remains imperative for achieving successful convergence in preference alignment. In this paper, we elaborate on the crucial role of SFT within the context of preference alignment, emphasizing that a minor penalty for the disfavored generation style is sufficient for preference-aligned SFT. Building on this foundation, we introduce a straightforward and innovative reference-free monolithic odds ratio preference optimization algorithm, ORPO, eliminating the necessity for an additional preference alignment phase. Empirically and theoretically, we demonstrate that the odds ratio serves as a sensible choice for contrasting favored and unfavored styles during SFT. Specifically, fine-tuning Phi-2 (2.7B), Llama-2 (7B), and Mistral (7B) with ORPO on UltraFeedback alone surpasses the performance of state-of-the-art language models with more than 7B and 13B parameters, achieving 66.2%, 81.3%, and 87.94% in AlpacaEval.
 
 
+&nbsp;
 
+**`Keywords`**
 
-Conceptual Data Model without Payment entities
-<img src="https://raw.githubusercontent.com/adrianmnh/dm-vm/mainBranch/project1/Diagrams/ConceptualModel.png" width="100%">
-
-Logical Data Model with multi-payment methods
-<img src="https://raw.githubusercontent.com/adrianmnh/dm-vm/mainBranch/project1/Diagrams/LogicalModel.png" width="100%">
-
-Physical Data Model with Attributes and Columns
-<img src="https://raw.githubusercontent.com/adrianmnh/dm-vm/mainBranch/project1/Diagrams/PhysicalModel.png" width="100%">
+- [X] Multi-Agent Reinforcement Learning 
+- [X] Sparse Reward
+- [X] Reward Shaping

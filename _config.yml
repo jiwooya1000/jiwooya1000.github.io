@@ -23,7 +23,7 @@ timezone: America/New_York
 
 title: Jiwoo Hong                     # the main title
 
-tagline: MS Student at KAIST GSAI   # it will display as the sub-title
+tagline: Master's Student at KAIST GSAI # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Static site
@@ -88,7 +88,7 @@ theme_mode: # [light|dark]
 img_cdn: 
 
 # the avatar on sidebar, support local or CORS resources
-avatar: '/assets/img/my_image.jpg'
+avatar: '/assets/img/jiwoo.jpg'
 
 # boolean type, the global switch for ToC in posts.
 toc: true

@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Jiwoo Hong</title>
   <subtitle>Static site</subtitle>
-  <updated>2024-03-02T21:54:43-05:00</updated>
+  <updated>2024-03-03T09:16:53-05:00</updated>
   <author>
     <name>Jiwoo Hong</name>
     <uri>http://localhost:4000/</uri>
@@ -20,231 +20,23 @@
 
   
   <entry>
-    <title>Smart Contract Reader for Ethereum blockchain</title>
-    <link href="http://localhost:4000/posts/smart-contract-reader/" rel="alternate" type="text/html" title="Smart Contract Reader for Ethereum blockchain" />
-    <published>2023-08-11T00:00:00-04:00</published>
+    <title>Arxiv - Reference-free Monolitic Odds Ratio Preference Optimization (ORPO)</title>
+    <link href="http://localhost:4000/posts/eMoviesRework/" rel="alternate" type="text/html" title="Arxiv - Reference-free Monolitic Odds Ratio Preference Optimization (ORPO)" />
+    <published>2024-03-03T00:00:00-05:00</published>
   
-    <updated>2023-08-11T00:00:00-04:00</updated>
-  
-    <id>http://localhost:4000/posts/smart-contract-reader/</id>
-    <content src="http://localhost:4000/posts/smart-contract-reader/" />
-    <author>
-      <name>adrian</name>
-    </author>
-
-  
-    
-    <category term="Web Development" />
-    
-    <category term="Smart Contract Reader" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      App demo
-https://erc.adriannyc.dev
-
-ERC20 Faucet React Project with Thirdweb Framework
-
-This repository contains the source code for a project written with React and Thirdweb framework.
-
-The project is hosted on GitHub Pages under my private domain.
-
-Link to Project source code
-
- Overview
-
-The project is built with React, a popular JavaScript library for building user interfaces.
-
-It utilizes t...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>FastCart - Food Delivery App for iOS</title>
-    <link href="http://localhost:4000/posts/FastCart-v1/" rel="alternate" type="text/html" title="FastCart - Food Delivery App for iOS" />
-    <published>2022-12-29T00:00:00-05:00</published>
-  
-    <updated>2022-12-29T00:00:00-05:00</updated>
-  
-    <id>http://localhost:4000/posts/FastCart-v1/</id>
-    <content src="http://localhost:4000/posts/FastCart-v1/" />
-    <author>
-      <name>adrian</name>
-    </author>
-
-  
-    
-    <category term="Mobile App Development" />
-    
-    <category term="Swift UIStoryboard" />
-    
-    <category term="Databases" />
-    
-    <category term="Facebook Authentication" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      objective
-
-The aim of our application is to provide local businesses with an online presence, enabling them to reach out to their customers during the mid-stages of the pandemic. This was achieved by creating FastCart, a food delivery app with a web management system built on several technologies and frameworks.
-
-
-
-source code and readme:
-
- Project Repo
-
-
-
-
-
-how to use
-
-To use FastCart, restaur...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Compression and Decompression via Distance Transform</title>
-    <link href="http://localhost:4000/posts/DistanceTransformCompression/" rel="alternate" type="text/html" title="Compression and Decompression via Distance Transform" />
-    <published>2022-11-02T00:00:00-04:00</published>
-  
-    <updated>2022-11-02T00:00:00-04:00</updated>
-  
-    <id>http://localhost:4000/posts/DistanceTransformCompression/</id>
-    <content src="http://localhost:4000/posts/DistanceTransformCompression/" />
-    <author>
-      <name>adrian</name>
-    </author>
-
-  
-    
-    <category term="Image Processing" />
-    
-    <category term="Skeleton Compression Algorithm" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Objective
-
-Given a binary image, the objective is to produce a loss-less compression via the skeleton of 8-connectness distance transform.
-
-To ensure correctness, a decompression algorithm is used on the compressed file.
-
- Project PDF source code and algorithms
-
-usage
-
-
-  Create a new folder
-  Download main.cpp and binary images in text format
-  Run the following commands
-
-
-g++ main.cpp -o main...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Threshold Selection</title>
-    <link href="http://localhost:4000/posts/ThresholdSelection/" rel="alternate" type="text/html" title="Threshold Selection" />
-    <published>2022-10-02T00:00:00-04:00</published>
-  
-    <updated>2022-10-02T00:00:00-04:00</updated>
-  
-    <id>http://localhost:4000/posts/ThresholdSelection/</id>
-    <content src="http://localhost:4000/posts/ThresholdSelection/" />
-    <author>
-      <name>adrian</name>
-    </author>
-
-  
-    
-    <category term="Image Processing" />
-    
-    <category term="Thresholding Algorithm" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Objective
-
-To take an image’s histogram from a text file and find the best threshold using the Gaussian automatic threshold selection method.
-
-This process yields a Gaussian function which is graphed along with the histogram, and the best threshold on the output files
-
- Project PDF source code and algorithms
-
-usage
-
-
-  Create a new folder
-  Download main.cpp and data files
-  Run the following c...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>eMovies Model Transformation</title>
-    <link href="http://localhost:4000/posts/eMoviesRework/" rel="alternate" type="text/html" title="eMovies Model Transformation" />
-    <published>2022-09-25T15:02:00-04:00</published>
-  
-    <updated>2022-09-25T15:02:00-04:00</updated>
+    <updated>2024-03-03T00:00:00-05:00</updated>
   
     <id>http://localhost:4000/posts/eMoviesRework/</id>
     <content src="http://localhost:4000/posts/eMoviesRework/" />
     <author>
-      <name>adrian</name>
+      <name>jiwoo</name>
     </author>
 
   
     
-    <category term="Data Analytics" />
+    <category term="NLP" />
     
-    <category term="Data Modeling a Movie Streaming" />
+    <category term="Language Model Alignment" />
     
   
 
@@ -256,21 +48,101 @@ usage
 
 
 
-      background
-
-eMovies is a data model provided by Quest’s ERwinDM sample with Logical and Physical models that describe an outdated Movie rental service.
-
-The purpose of this project is to rework the models into a modern format
-
- More on Quest’s eMovies and data models 
-
-Features of my Models
+      Our paper, ORPO: Monolithic Odds Ratio Preference Optimization without Reference Model is uploaded to Arxiv.org! Our best model, ORPO-Mistral (7B) and ORPO-Llama-2 (7B) surpasses the state-of-the-art instruction-following large language models, including Zephyr ($\alpha$), Zephyr ($\beta$), and Llama-2-Chat (13B) in AlpacaEval and MT-Bench.
 
 
-  Includes a Conceptual Model
-  Includes a Logical Model
-  Includes a Physical Model
-  Includes views t...
+
+ 
+
+Abstract
+
+While recently proposed preference ali...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>EMNLP 2023 - Our paper is accepted to the Findings of EMNLP!</title>
+    <link href="http://localhost:4000/posts/emnlp2023/" rel="alternate" type="text/html" title="EMNLP 2023 - Our paper is accepted to the Findings of EMNLP!" />
+    <published>2023-12-06T00:00:00-05:00</published>
+  
+    <updated>2023-12-06T00:00:00-05:00</updated>
+  
+    <id>http://localhost:4000/posts/emnlp2023/</id>
+    <content src="http://localhost:4000/posts/emnlp2023/" />
+    <author>
+      <name>jiwoo</name>
+    </author>
+
+  
+    
+    <category term="NLP" />
+    
+    <category term="Journalism AI" />
+    
+    <category term="EMNLP2023" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Our paper, Disentangling Structure and Style: Political Bias Detection in News by Inducing Document Hierarchy is accepted to the Findings of EMNLP 2023!
+
+ 
+
+Abstract
+
+We address an important gap in detecting political bias in news articles. Previous works that perform document classification can be influenced by the writing style of each news outlet, leading to overfitting and limited generaliz...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Applied Science - Our paper is accepted to the Applied Science (SCIE)!</title>
+    <link href="http://localhost:4000/posts/applied-science/" rel="alternate" type="text/html" title="Applied Science - Our paper is accepted to the Applied Science (SCIE)!" />
+    <published>2022-05-07T00:00:00-04:00</published>
+  
+    <updated>2022-05-07T00:00:00-04:00</updated>
+  
+    <id>http://localhost:4000/posts/applied-science/</id>
+    <content src="http://localhost:4000/posts/applied-science/" />
+    <author>
+      <name>jiwoo</name>
+    </author>
+
+  
+    
+    <category term="Reinforcement Learning" />
+    
+    <category term="Multi-Agent Reinforcement Learning" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Our paper, MARL-Based Dual Reward Model on Segmented Actions for Multiple Mobile Robots in Automated Warehouse Environment is accepted to the Applied Science!
+
+ 
+
+Abstract
+
+The simple and labor-intensive tasks of workers on the job site are rapidly becoming digital. In the work environment of logistics warehouses and manufacturing plants, moving goods to a designated place is a typical labor-in...
     </summary>
   
 

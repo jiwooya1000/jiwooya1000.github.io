@@ -25,7 +25,7 @@
       <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
     </div>
     <div class="site-subtitle font-italic">{{ site.tagline }}</div>
-
+ 
   </div><!-- .profile-wrapper -->
 
   <ul class="w-100">
@@ -44,7 +44,7 @@
     <li class="nav-item {% if page.layout == 'projects' %}{{ "active" }}{%  endif %}">
       <a href="{{ site.paginate_path | replace: '/:num', '' | relative_url }}" class="nav-link">
         <i class="fa-fw fas fa-pen ml-xl-3 mr-xl-3 unloaded"></i>
-        <span>{{ 'projects' | upcase }}</span>
+        <span>{{ 'publications' | upcase }}</span>
       </a>
     </li>
 
@@ -97,7 +97,7 @@
 
 
           {%- elsif entry.type == 'email' -%}
-            {{ site.url }}/contact 
+            mailto:{{ site.social.email}} 
 
         {%- elsif entry.type == 'rss' -%}
           {{ "/feed.xml" | relative_url }}
