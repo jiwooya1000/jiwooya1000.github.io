@@ -5,7 +5,8 @@
 layout:
   post: Post
   category: Category
-  tag: Tag
+  tag: Tags
+  contact: Contact me
 
 # The tabs of sidebar
 tabs:
@@ -14,7 +15,7 @@ tabs:
   categories: Categories
   tags: Tags
   archives: Archives
-  about: About
+  contact: Contact Info
 
 # the text displayed in the search bar & search results
 search:
@@ -31,7 +32,8 @@ copyright:
   # Shown at the bottom of the post
   license:
     template: This post is licensed under :LICENSE_NAME by the author.
-    name: CC BY 4.0
+    name: Attribution 4.0 International(CC BY 4.0)
+    short: :LICENSE_NAME
     link: https://creativecommons.org/licenses/by/4.0/
 
   # Displayed in the footer
@@ -40,7 +42,7 @@ copyright:
     Except where otherwise noted, the blog posts on this site are licensed
     under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.
 
-meta: Using the :THEME theme for :PLATFORM.
+meta: Powered by Cotes Chung's :PLATFORM with :THEME theme.
 
 not_found:
   statment: Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.
@@ -70,16 +72,8 @@ post:
     share_link:
       title: Copy link
       succeed: Link copied successfully!
-
-# Date time format.
-# See: <http://strftime.net/>, <https://day.js.org/docs/en/display/format>
-df:
-  post:
-    strftime: "%b %e, %Y"
-    dayjs: "ll"
-  archives:
-    strftime: "%b"
-    dayjs: "MMM"
+  # pinned prompt of posts list on homepage
+  pin_prompt: Pinned
 
 # categories page
 categories:

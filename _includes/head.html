@@ -1,111 +1,126 @@
+<!--
+  The Head
+-->
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta
-    name="viewport"
-    content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
-  >
 
-  {%- capture seo_tags -%}
-    {% seo title=false %}
-  {%- endcapture -%}
+	<meta name="google-site-verification" content="hw1-5ZCTW9O6DM8wLsTc8uXd9mWuc3PSZvVAjltK65c" />
 
-  <!-- Setup Open Graph image -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  {% if page.image %}
-    {% assign src = page.image.path | default: page.image %}
+	<!-- Allow having a localized datetime different from the appearance language -->
+	{% if site.prefer_datetime_locale %}
+	<meta name="prefer-datetime-locale" content="{{ site.prefer_datetime_locale }}">
+	{% endif %}
 
-    {% unless src contains '://' %}
-      {%- capture img_url -%}
-        {% include img-url.html src=src img_path=page.img_path absolute=true %}
-      {%- endcapture -%}
+	{% if page.layout == 'home' or page.layout == 'post' %}
 
-      {%- capture old_url -%}{{ src | absolute_url }}{%- endcapture -%}
-      {%- capture new_url -%}{{ img_url }}{%- endcapture -%}
+	{% if site.google_analytics.pv.proxy_endpoint %}
+	<meta name="pv-proxy-endpoint" content="{{ site.google_analytics.pv.proxy_endpoint }}">
+	{% endif %}
 
-      {% assign seo_tags = seo_tags | replace: old_url, new_url %}
-    {% endunless %}
+	{% if site.google_analytics.pv.cache_path %}
+	<meta name="pv-cache-path" content="{{ site.google_analytics.pv.cache_path | relative_url }}">
+	{% endif %}
 
-  {% elsif site.social_preview_image %}
-    {%- capture img_url -%}
-      {% include img-url.html src=site.social_preview_image absolute=true %}
-    {%- endcapture -%}
+	{% endif %}
 
-    {%- capture og_image -%}
-      <meta property="og:image" content="{{ img_url }}" />
-    {%- endcapture -%}
+	{% capture seo_tags %}
+	{% seo title=false %}
+	{% endcapture %}
 
-    {%- capture twitter_image -%}
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:image" content="{{ img_url }}" />
-    {%- endcapture -%}
+	{% if site.img_cdn and seo_tags contains 'og:image' %}
+	{% assign properties = 'og:image,twitter:image' | split: ',' %}
 
-    {% assign old_meta_clip = '<meta name="twitter:card" content="summary" />' %}
-    {% assign new_meta_clip = og_image | append: twitter_image %}
-    {% assign seo_tags = seo_tags | replace: old_meta_clip, new_meta_clip %}
+	{% for prop in properties %}
+	{% if site.img_cdn contains '//' %}
+	<!-- `site.img_cdn` is a cross-origin URL -->
+	{% capture target %}
+	<meta property="{{ prop }}" content="{{ site.url }}{% endcapture %}
+        {% capture replacement %}<meta property=" {{ prop }}" content="{{ site.img_cdn }}{% endcapture %}
+      {% else %}
+        <!-- `site.img_cdn` is a local file path -->
+        {% capture target %}<meta property=" {{ prop }}" content="{{ site.url }}{{ site.baseurl }}{% endcapture %}
+        {% assign replacement = target | append: site.img_cdn %}
+      {% endif %}
+
+      {% assign seo_tags = seo_tags | replace: target, replacement %}
+
+    {% endfor %}
   {% endif %}
 
   {{ seo_tags }}
 
   <title>
-    {%- unless page.layout == 'home' -%}
-      {{ page.title | append: ' | ' }}
-    {%- endunless -%}
-    {{ site.title }}
-  </title>
+  {%- unless page.layout == " home" -%} {{ page.title | append: " | " }} {%- endunless -%} {{ site.title }} </title>
 
-  {% include_cached favicons.html %}
+	{% include favicons.html %}
 
-  {% if site.resources.ignore_env != jekyll.environment and site.resources.self_hosted %}
-    <link href="{{ site.data.origin[type].webfonts | relative_url }}" rel="stylesheet">
+	{% if site.resources.ignore_env != jekyll.environment and site.resources.self_hosted %}
 
-  {% else %}
-    {% for cdn in site.data.origin[type].cdns %}
-      <link rel="preconnect" href="{{ cdn.url }}" {{ cdn.args }}>
-      <link rel="dns-prefetch" href="{{ cdn.url }}" {{ cdn.args }}>
-    {% endfor %}
+	<link href="{{ site.data.assets[origin].webfonts | relative_url }}" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ site.data.origin[type].webfonts | relative_url }}">
-  {% endif %}
+	{% else %}
 
-  <!-- GA -->
-  {% if jekyll.environment == 'production' and site.analytics.google.id != empty and site.analytics.google.id %}
-    <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials">
-    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+	{% for cdn in site.data.assets[origin].cdns %}
+	<link rel="preconnect" href="{{ cdn.url }}" {{ cdn.args }}>
+	<link rel="dns-prefetch" href="{{ cdn.url }}" {{ cdn.args }}>
+	{% endfor %}
 
-    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous">
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-  {% endif %}
+	<link rel="stylesheet" href="{{ site.data.assets[origin].webfonts | relative_url }}">
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="{{ site.data.origin[type].bootstrap.css | relative_url }}">
+	{% endif %}
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="{{ site.data.origin[type].fontawesome.css | relative_url }}">
+	<!-- GA -->
+	{% if jekyll.environment == 'production'
+	and site.google_analytics.id != empty and site.google_analytics.id %}
+	<link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials">
+	<link rel="dns-prefetch" href="https://www.google-analytics.com">
 
-  <link rel="stylesheet" href="{{ '/assets/css/:THEME.css' | replace: ':THEME', site.theme | relative_url }}">
+	<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous">
+	<link rel="dns-prefetch" href="https://www.googletagmanager.com">
 
-  {% if site.toc and page.toc %}
-    <link rel="stylesheet" href="{{ site.data.origin[type].toc.css | relative_url }}">
-  {% endif %}
+	{% if site.google_analytics.pv.proxy_endpoint %}
+	{% assign proxy_url = site.google_analytics.pv.proxy_endpoint
+	| replace: "https://", "" | split: "/" | first | prepend: "https://" %}
+	<link rel="preconnect" href="{{ proxy_url }}" crossorigin="use-credentials">
+	<link rel="dns-prefetch" href="{{ proxy_url }}">
+	{% endif %}
+	{% endif %}
 
-  {% if page.layout == 'post' or page.layout == 'page' or page.layout == 'home' %}
-    <link rel="stylesheet" href="{{ site.data.origin[type]['lazy-polyfill'].css | relative_url }}">
-  {% endif %}
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="{{ site.data.assets[origin].bootstrap.css | relative_url}}">
 
-  {% if page.layout == 'page' or page.layout == 'post' %}
-    <!-- Manific Popup -->
-    <link rel="stylesheet" href="{{ site.data.origin[type].magnific-popup.css | relative_url }}">
-  {% endif %}
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="{{ site.data.assets[origin].fontawesome.css | relative_url }}">
 
-  <!-- JavaScript -->
+	<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
-  {% unless site.theme_mode %}
-    {% include mode-toggle.html %}
-  {% endunless %}
+	{% if site.toc and page.toc %}
+	<link rel="stylesheet" href="{{ site.data.assets[origin].bootstrap-toc.css | relative_url }}">
+	{% endif %}
 
-  {% include metadata-hook.html %}
+	{% if page.layout == 'page' or page.layout == 'post' %}
+	<!-- Manific Popup -->
+	<link rel="stylesheet" href="{{ site.data.assets[origin].magnific-popup.css | relative_url }}">
+	{% endif %}
+
+	<!-- JavaScript -->
+
+	<script src="{{ site.data.assets[origin].jquery.js | relative_url }}"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="../assets/myJS/home.js"></script> -->
+
+
+
+	<!-- My css -->
+
+    <link type="text/css" rel="stylesheet" href="/assets/css/contact.css">
+    <link type="text/css" rel="stylesheet" href="/assets/css/home.css">
+    <link type="text/css" rel="stylesheet" href="/assets/css/posts.css">
+
+	{% unless site.theme_mode %}
+	{% include mode-toggle.html %}
+	{% endunless %}
 </head>

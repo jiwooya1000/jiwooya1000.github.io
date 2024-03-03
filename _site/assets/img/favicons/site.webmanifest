@@ -1,9 +1,9 @@
 
 
 {
-  "name": "Jiwoo's Website",
-  "short_name": "Jiwoo's Website",
-  "description": "This is Jiwoo's website to archive the research interest on publications.",
+  "name": "Jiwoo Hong",
+  "short_name": "Jiwoo Hong",
+  "description": "Static site",
   "icons": [
     {
       "src": "/assets/img/favicons/android-chrome-192x192.png",
