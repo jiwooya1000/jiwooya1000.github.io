@@ -1,9 +1,9 @@
 ---
-title: Applied Science - Our paper is accepted to the Applied Science (SCIE)!
+title: Our paper is accepted to the Applied Science (SCIE)!
 author: jiwoo
 date: 2022-05-07
 categories: [Reinforcement Learning, Multi-Agent Reinforcement Learning]
-tags: [🔥Publications, Reinforcement Learning, Multi-Agent Reinforcement Learning]
+tags: [🌟Publications, 🔥Reinforcement Learning, Multi-Agent Reinforcement Learning]
 pin: false
 math: true
 mermaid: false

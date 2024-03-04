@@ -1,10 +1,10 @@
 [
   
   {
-    "title": "Arxiv - Reference-free Monolitic Odds Ratio Preference Optimization (ORPO)",
-    "url": "/posts/eMoviesRework/",
+    "title": "Reference-free Monolitic Odds Ratio Preference Optimization (ORPO)",
+    "url": "/posts/orpo/",
     "categories": "NLP, Language Model Alignment",
-    "tags": "🔥Publications, NLP, LLM, Alignment",
+    "tags": "🌟Publications, 🔥NLP, 🔥LLM, 🔥Alignment",
     "date": "2024-03-03 00:00:00 -0500",
     
 
@@ -12,14 +12,14 @@
 
 
 
-    "snippet": "Our paper, ORPO: Monolithic Odds Ratio Preference Optimization without Reference Model is uploaded to Arxiv.org! Our best model, ORPO-Mistral (7B) and ORPO-Llama-2 (7B) surpasses the state-of-the-art instruction-following large language models, including Zephyr ($\\alpha$), Zephyr ($\\beta$), and Llama-2-Chat (13B) in AlpacaEval and MT-Bench. AbstractWhile recently proposed preference alignment algorithms for language models have demonstrated promising results, supervised fine-tuning (SFT) remains imperative for achieving successful convergence in preference alignment. In this paper, we elaborate on the crucial role of SFT within the context of preference alignment, emphasizing that a minor penalty for the disfavored generation style is sufficient for preference-aligned SFT. Building on this foundation, we introduce a straightforward and innovative reference-free monolithic odds ratio preference optimization algorithm, ORPO, eliminating the necessity for an additional preference alignment phase. Empirically and theoretically, we demonstrate that the odds ratio serves as a sensible choice for contrasting favored and unfavored styles during SFT. Specifically, fine-tuning Phi-2 (2.7B), Llama-2 (7B), and Mistral (7B) with ORPO on UltraFeedback alone surpasses the performance of state-of-the-art language models with more than 7B and 13B parameters, achieving 66.2%, 81.3%, and 87.94% in AlpacaEval. Keywords  Multi-Agent Reinforcement Learning  Sparse Reward  Reward Shaping"
+    "snippet": "Our paper, ORPO: Monolithic Odds Ratio Preference Optimization without Reference Model is uploaded to Arxiv! Our best model, ORPO-Mistral (7B) and ORPO-Llama-2 (7B) surpasses the state-of-the-art instruction-following large language models by fine-tuning pre-trained language models with ORPO on single-turn conversation UltraFeedback dataset only, including Zephyr ($\\alpha$), Zephyr ($\\beta$), and Llama-2-Chat (13B) in AlpacaEval and MT-Bench without two distinct supervised fine-tuning &amp; alignment phases.    Figure 1. AlpacaEval\\(\\text{}_{2.0}\\) score of \\(\\texttt{ORPO}\\)-Llama-2 (7B) and \\(\\texttt{ORPO}\\)-Mistral (7B) compared to RLHF and DPO models. They surpass RLHF and DPO-tuned models, respectively.You can find our models, ORPO-Mistral (7B) and ORPO-Llama-2 (7B) in:  🤗 ORPO-Mistral (7B)  🤗 ORPO-Llama-2 (7B) MethodsIn Section 3 of our paper, we study the role of SFT in the context of preference alignment and show that the negative log-likelihood (NLL) loss in SFT simultaneously encourages the log probabilities of both the chosen and rejected responses. Meanwhile, inspired by the intuitions behind DPO and Unlikelihood training, we designed a modified NLL loss which leads to stronger adaptation to the chosen responses and minor penalty to the rejected responses, thereby questioning the necessity of separated alignment scheme.From this background, we propose ORPO which penalizes the model from assigning high probabilities to the rejected responses in average during supervised fine-tuning (SFT).\\[\\mathcal{L}_{ORPO} = -\\mathbb{E}_{(x, y_w, y_l)}\\left[ \\mathcal{L}_{SFT} + \\lambda \\cdot \\mathcal{L}_{Ratio} \\right]\\]"
   },
   
   {
-    "title": "EMNLP 2023 - Our paper is accepted to the Findings of EMNLP!",
+    "title": "Our paper is accepted to the Findings of EMNLP 2023!",
     "url": "/posts/emnlp2023/",
     "categories": "NLP, Journalism AI, EMNLP2023",
-    "tags": "🔥Publications, NLP, Journalism AI, EMNLP2023",
+    "tags": "🌟Publications, 🔥NLP, Journalism AI, EMNLP2023",
     "date": "2023-12-06 00:00:00 -0500",
     
 
@@ -27,14 +27,14 @@
 
 
 
-    "snippet": "Our paper, Disentangling Structure and Style: Political Bias Detection in News by Inducing Document Hierarchy is accepted to the Findings of EMNLP 2023! AbstractWe address an important gap in detecting political bias in news articles. Previous works that perform document classification can be influenced by the writing style of each news outlet, leading to overfitting and limited generalizability. Our approach overcomes this limitation by considering both the sentence-level semantics and the document-level rhetorical structure, resulting in a more robust and style-agnostic approach to detecting political bias in news articles. We introduce a novel multi-head hierarchical attention model that effectively encodes the structure of long documents through a diverse ensemble of attention heads. While journalism follows a formalized rhetorical structure, the writing style may vary by news outlet. We demonstrate that our method overcomes this domain dependency and outperforms previous approaches for robustness and accuracy. Further analysis and human evaluation demonstrate the ability of our model to capture common discourse structures in journalism. Main MethodThe proposed architecture primarily utilizes the frozen SBERT (Reimers and Gurevych, 2019) to encode the news article by sentences. Then, it calculates semantic relationships between the sentences through BiLSTM and shallow multi-head attention module, which allows us to understand the hierarchical discourse structure of the document. With this explainable property, our model precisely classify the political bias of the given news article in the low resource setting.  Split the bill x-ways  Tip percentages may be adjusted  Settings are stored after app restarts and/or is closed  Settings can be reset back to defaults  Features dark/light mode on settings screen"
+    "snippet": "Our paper, Disentangling Structure and Style: Political Bias Detection in News by Inducing Document Hierarchy is accepted to the Findings of EMNLP 2023! AbstractWe address an important gap in detecting political bias in news articles. Previous works that perform document classification can be influenced by the writing style of each news outlet, leading to overfitting and limited generalizability. Our approach overcomes this limitation by considering both the sentence-level semantics and the document-level rhetorical structure, resulting in a more robust and style-agnostic approach to detecting political bias in news articles. We introduce a novel multi-head hierarchical attention model that effectively encodes the structure of long documents through a diverse ensemble of attention heads. While journalism follows a formalized rhetorical structure, the writing style may vary by news outlet. We demonstrate that our method overcomes this domain dependency and outperforms previous approaches for robustness and accuracy. Further analysis and human evaluation demonstrate the ability of our model to capture common discourse structures in journalism. Main MethodThe proposed architecture primarily utilizes the frozen SBERT (Reimers and Gurevych, 2019) to encode the news article by sentences. Then, it calculates semantic relationships between the sentences through BiLSTM and shallow multi-head attention module, which allows us to understand the hierarchical discourse structure of the document. With this explainable property, our model precisely classify the political bias of the given news article in the low resource setting."
   },
   
   {
-    "title": "Applied Science - Our paper is accepted to the Applied Science (SCIE)!",
+    "title": "Our paper is accepted to the Applied Science (SCIE)!",
     "url": "/posts/applied-science/",
     "categories": "Reinforcement Learning, Multi-Agent Reinforcement Learning",
-    "tags": "🔥Publications, Reinforcement Learning, Multi-Agent Reinforcement Learning",
+    "tags": "🌟Publications, 🔥Reinforcement Learning, Multi-Agent Reinforcement Learning",
     "date": "2022-05-07 00:00:00 -0400",
     
 
