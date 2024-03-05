@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Jiwoo Hong</title>
   <subtitle>Static site</subtitle>
-  <updated>2024-03-04T03:16:53-05:00</updated>
+  <updated>2024-03-06T00:04:19+09:00</updated>
   <author>
     <name>Jiwoo Hong</name>
     <uri>http://localhost:4000/</uri>
@@ -22,9 +22,9 @@
   <entry>
     <title>Reference-free Monolitic Odds Ratio Preference Optimization (ORPO)</title>
     <link href="http://localhost:4000/posts/orpo/" rel="alternate" type="text/html" title="Reference-free Monolitic Odds Ratio Preference Optimization (ORPO)" />
-    <published>2024-03-03T00:00:00-05:00</published>
+    <published>2024-03-03T00:00:00+09:00</published>
   
-    <updated>2024-03-03T00:00:00-05:00</updated>
+    <updated>2024-03-03T00:00:00+09:00</updated>
   
     <id>http://localhost:4000/posts/orpo/</id>
     <content src="http://localhost:4000/posts/orpo/" />
@@ -48,7 +48,7 @@
 
 
 
-      Our paper, ORPO: Monolithic Odds Ratio Preference Optimization without Reference Model is uploaded to Arxiv! Our best model, ORPO-Mistral (7B) and ORPO-Llama-2 (7B) surpasses the state-of-the-art instruction-following large language models by fine-tuning pre-trained language models with ORPO on single-turn conversation UltraFeedback dataset only, including Zephyr ($\alpha$), Zephyr ($\beta$), a...
+      Our paper, ORPO: Monolithic Odds Ratio Preference Optimization without Reference Model with Noah Lee, will be uploaded to Arxiv! Our best model, 🤗 ORPO-Mistral (7B), surpasses or is on par with the state-of-the-art instruction-following large language models (in AlpacaEval and MT-Bench), including Zephyr ($\beta$), TULU-2-DPO (13B), and Llama-2-Chat (13B), by fine-tuning pre-trained language mo...
     </summary>
   
 
@@ -58,9 +58,9 @@
   <entry>
     <title>Our paper is accepted to the Findings of EMNLP 2023!</title>
     <link href="http://localhost:4000/posts/emnlp2023/" rel="alternate" type="text/html" title="Our paper is accepted to the Findings of EMNLP 2023!" />
-    <published>2023-12-06T00:00:00-05:00</published>
+    <published>2023-12-06T00:00:00+09:00</published>
   
-    <updated>2023-12-06T00:00:00-05:00</updated>
+    <updated>2024-03-04T17:17:09+09:00</updated>
   
     <id>http://localhost:4000/posts/emnlp2023/</id>
     <content src="http://localhost:4000/posts/emnlp2023/" />
@@ -102,9 +102,9 @@ We address an important gap in detecting political bias in news articles. Previo
   <entry>
     <title>Our paper is accepted to the Applied Science (SCIE)!</title>
     <link href="http://localhost:4000/posts/applied-science/" rel="alternate" type="text/html" title="Our paper is accepted to the Applied Science (SCIE)!" />
-    <published>2022-05-07T00:00:00-04:00</published>
+    <published>2022-05-07T00:00:00+09:00</published>
   
-    <updated>2022-05-07T00:00:00-04:00</updated>
+    <updated>2024-03-04T17:17:09+09:00</updated>
   
     <id>http://localhost:4000/posts/applied-science/</id>
     <content src="http://localhost:4000/posts/applied-science/" />
