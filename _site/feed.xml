@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Jiwoo Hong</title>
   <subtitle>Static site</subtitle>
-  <updated>2024-03-06T00:04:19+09:00</updated>
+  <updated>2024-03-06T00:08:41+09:00</updated>
   <author>
     <name>Jiwoo Hong</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/orpo/" rel="alternate" type="text/html" title="Reference-free Monolitic Odds Ratio Preference Optimization (ORPO)" />
     <published>2024-03-03T00:00:00+09:00</published>
   
-    <updated>2024-03-03T00:00:00+09:00</updated>
+    <updated>2024-03-06T00:08:12+09:00</updated>
   
     <id>http://localhost:4000/posts/orpo/</id>
     <content src="http://localhost:4000/posts/orpo/" />
