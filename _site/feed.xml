@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Jiwoo Hong</title>
   <subtitle>Static site</subtitle>
-  <updated>2024-03-11T17:30:27+09:00</updated>
+  <updated>2024-03-12T14:31:15+09:00</updated>
   <author>
     <name>Jiwoo Hong</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/orpo/" rel="alternate" type="text/html" title="Reference-free Monolitic Odds Ratio Preference Optimization (ORPO)" />
     <published>2024-03-03T00:00:00+09:00</published>
   
-    <updated>2024-03-07T16:22:00+09:00</updated>
+    <updated>2024-03-11T17:31:03+09:00</updated>
   
     <id>http://localhost:4000/posts/orpo/</id>
     <content src="http://localhost:4000/posts/orpo/" />
@@ -48,7 +48,7 @@
 
 
 
-      Our paper, ORPO: Monolithic Odds Ratio Preference Optimization without Reference Model with Noah Lee, will be uploaded to Arxiv! Our best model, 🤗 ORPO-Mistral (7B), surpasses or is on par with the state-of-the-art instruction-following large language models (in AlpacaEval and MT-Bench), including Zephyr ($\beta$), TULU-2-DPO (13B), and Llama-2-Chat (13B), by fine-tuning pre-trained language mo...
+      Our paper, ORPO: Monolithic Odds Ratio Preference Optimization without Reference Model with Noah Lee, will be uploaded to Arxiv! Our best models, 🤗 Mistral-ORPO-$\alpha$ (7B) and 🤗 Mistral-ORPO-$\beta$ (7B), surpasses or is on par with the state-of-the-art instruction-following large language models (in AlpacaEval and MT-Bench), including Zephyr $\beta$ (7B), TULU-2-DPO (13B), and Llama-2-Chat ...
     </summary>
   
 
