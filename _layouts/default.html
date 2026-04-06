@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <script>
+      (function() {
+        try {
+          var savedTheme = localStorage.getItem("theme");
+          if (savedTheme === "dark" || savedTheme === "light") {
+            document.documentElement.dataset.theme = savedTheme;
+          }
+        } catch (error) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+  </head>
+  <body>
+    {% assign contact_email = site.contact_email | default: site.email %}
+    <div class="wrapper">
+      <aside class="sidebar">
+        <div class="sidebar-inner">
+          <div class="sidebar-identity">
+            {% if site.profile_image %}
+              <img class="profile-image" src="{{ site.profile_image | relative_url }}" alt="{{ site.title }}">
+            {% endif %}
+            <p class="sidebar-label">{{ site.sidebar_label }}</p>
+            <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+          </div>
+          <p class="site-subtitle">{{ site.subtitle }}</p>
+          <div class="sidebar-links" aria-label="Profile links">
+            {% for item in site.profile_links %}
+              {% assign item_url = item.url %}
+              {% assign is_external = false %}
+              {% if item_url contains '://' or item_url contains 'mailto:' %}
+                {% assign is_external = true %}
+              {% else %}
+                {% assign item_url = item_url | relative_url %}
+              {% endif %}
+              <a
+                class="profile-link-button"
+                href="{{ item_url }}"
+                aria-label="{{ item.title }}"
+                title="{{ item.title }}"
+                {% if is_external %}target="_blank" rel="noreferrer noopener"{% endif %}
+              >
+                {% include profile-link-icon.html name=item.title %}
+                <span class="sr-only">{{ item.title }}</span>
+              </a>
+              {% if forloop.first and contact_email %}
+                <a
+                  class="profile-link-button"
+                  href="mailto:{{ contact_email }}"
+                  aria-label="Email"
+                  title="Email"
+                >
+                  {% include profile-link-icon.html name='Email' %}
+                  <span class="sr-only">Email</span>
+                </a>
+              {% endif %}
+            {% endfor %}
+          </div>
+          <p class="site-description">{{ site.description }}</p>
+
+          <nav class="sidebar-nav" aria-label="Section navigation">
+            {% for item in site.navigation %}
+              <a href="{{ item.url }}">{{ item.title }}</a>
+            {% endfor %}
+          </nav>
+
+          <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle dark mode">
+            <span class="theme-toggle-switch" aria-hidden="true"></span>
+            <span class="theme-toggle-text">Dark mode</span>
+          </button>
+        </div>
+      </aside>
+
+      <main class="content">
+        {{ content }}
+      </main>
+    </div>
+    <script src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
+  </body>
+</html>

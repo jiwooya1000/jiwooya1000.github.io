@@ -1,0 +1,39 @@
+title: Jiwoo Hong
+subtitle: "AI Engineer @ LinkedIn"
+url: "https://jiwooya1000.github.io"
+profile_image: "/assets/img/jiwoo_image_0405.jpg"
+email: jiwoo_hong@kaist.ac.kr
+contact_email: jiwoo_hong@kaist.ac.kr
+lang: en-US
+
+navigation:
+  - title: About
+    url: "#about"
+  - title: Experience
+    url: "#experience"
+  - title: Publications
+    url: "#publications"
+  - title: Patent
+    url: "#patent"
+  - title: Academic Services
+    url: "#services"
+  - title: Talks
+    url: "#talks"
+
+profile_links:
+  - title: CV
+    url: "/assets/cv/jiwhong_cv.pdf"
+  - title: GitHub
+    url: "https://github.com/jiwooya1000"
+  - title: X
+    url: "https://x.com/jiwoohong98"
+  - title: LinkedIn
+    url: "https://www.linkedin.com/in/jiwoohong09/"
+  - title: Google Scholar
+    url: "https://scholar.google.com/citations?user=aj3mLdcAAAAJ&hl=en"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+github: [metadata]

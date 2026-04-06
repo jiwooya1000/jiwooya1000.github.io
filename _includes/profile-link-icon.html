@@ -1,0 +1,19 @@
+{% assign icon_name = include.name | downcase %}
+<span class="profile-link-icon" aria-hidden="true">
+  {% case icon_name %}
+    {% when 'cv' %}
+      <i class="fa-solid fa-file-arrow-down"></i>
+    {% when 'email' %}
+      <i class="fa-regular fa-envelope"></i>
+    {% when 'github' %}
+      <i class="fa-brands fa-github"></i>
+    {% when 'x' %}
+      <i class="fa-brands fa-x-twitter"></i>
+    {% when 'linkedin' %}
+      <i class="fa-brands fa-linkedin"></i>
+    {% when 'google scholar' %}
+      <i class="fa-solid fa-graduation-cap"></i>
+    {% else %}
+      <i class="fa-solid fa-link"></i>
+  {% endcase %}
+</span>
