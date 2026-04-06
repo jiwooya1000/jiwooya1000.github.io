@@ -30,7 +30,12 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3"
-          bundler-cache: true
+          bundler-cache: false
+
+      - name: Install gems for Linux CI
+        run: |
+          bundle lock --add-platform x86_64-linux
+          bundle install
 
       - name: Build site
         run: bundle exec jekyll build
