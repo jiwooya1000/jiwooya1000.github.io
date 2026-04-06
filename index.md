@@ -126,7 +126,7 @@ layout: default
         <span class="item-period venue">ICML'25</span>
       </div>
       <div class="publication-footer">
-        <p class="item-meta publication-authors">Aman Gupta, Shao Tang, Qingquan Song, Sirou Zhu, <u>Jiwoo Hong</u>, and collaborators</p>
+        <p class="item-meta publication-authors">Aman Gupta*, Shao Tang*, Qingquan Song, Sirou Zhu, <u>Jiwoo Hong</u>, Ankan Saha, Viral Gupta, Noah Lee, Eunki Kim, Jason Zhu, Natesh Pillai, S Sathiya Keerthi</p>
         <a class="paper-button" href="https://proceedings.mlr.press/v267/gupta25d.html">Paper</a>
       </div>
     </article>
