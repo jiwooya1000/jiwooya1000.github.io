@@ -23,7 +23,7 @@ layout: default
           >
           <h3 class="item-title">Specialist AI Engineer</h3>
         </div>
-        <span class="item-period">2026 - Present</span>
+        <span class="item-period">Jan 2026 - Present</span>
       </div>
       <p class="item-meta">LinkedIn, Core AI</p>
       <p>
@@ -44,7 +44,7 @@ layout: default
       </div>
       <p class="item-meta">Amazon, Rufus</p>
       <p>
-        Multi-objective reinforcement learing alrogithms for language model post-training.
+        Multi-objective reinforcement learning algorithms for language model post-training.
       </p>
     </article>
     <article class="timeline-item">
@@ -61,7 +61,7 @@ layout: default
       </div>
       <p class="item-meta">Naver Cloud, HyperClova</p>
       <p>
-        Large reasoning model research and core contributor to HyperCLOVA X THINK.
+        Large reasoning model research and a core contributor to HyperCLOVA X THINK.
       </p>
     </article>
   </div>
@@ -73,7 +73,7 @@ layout: default
     <article class="publication-item">
       <div class="publication-topline">
         <h4 class="item-title">Bayesian Preference Learning for Test-Time Steerable Reward Models</h4>
-        <span class="item-period venue">Preprint</span>
+        <span class="item-period venue">RLxF @ ICML'26</span>
       </div>
       <div class="publication-footer">
         <p class="item-meta publication-authors"><u>Jiwoo Hong</u>*, Shao Tang*, Zhipeng Wang</p>
